@@ -4,108 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Document</title>
+    <title>Aaron's Wishlist</title>
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#top-bar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+    <nav id="top-bar" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Aaron's Wishlist</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#top-picks">Top Picks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tech">Tech</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#music-gear">Music Gear</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#video-games">Video Games</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     <main>
 
         <section class="py-5 text-center container">
           <div class="row py-lg-5">
             <div class="col-lg-6 col-md-8 mx-auto">
-              <h1 class="fw-light">Aaron's Wishlist</h1>
-              <p class="lead text-body-secondary">Lots of nerdy stuff - this list may be updated</p>
+              <!--<h1 class="fw-light">Aaron's Wishlist</h1>-->
+              <p class="lead text-body-secondary">All prices are retail prices - for music gear from Sweetwater, a gift card might be best.</p>
               <!--<p>
                 <a href="#" class="btn btn-primary my-2">Main call to action</a>
                 <a href="#" class="btn btn-secondary my-2">Secondary action</a>
               </p> -->
             </div>
           </div>
-        </section>
-      
+          <!--
+          <nav class="navbar nav-pills nav-fill">
+            <a class="nav-link" aria-current="page" href="#top-picks">Top Picks</a>
+            <a class="nav-link" aria-current="page" href="#tech">Tech</a>
+            <a class="nav-link" aria-current="page" href="#music-gear">Music Gear</a>
+            <a class="nav-link" aria-current="page" href="#video-games">Video Games</a>
+          </nav>
+          -->
+        </section>        
         <div class="album py-5 bg-body-secondary">
+            <div id="top-picks">
+            <h2>Top Picks</h2>         
+            <hr />
             <div class="container">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    
                     <div class="col">
                         <div class="card shadow-sm">
-                            <a href="https://store.steampowered.com/app/1086940/Baldurs_Gate_3/"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/BD3.png" /></a>
-                                <div class="card-body">
-                                    <p class="card-text">Baldur's Gate 3</p>
-                                    <div class="d-flex justify-content-between align-items-center">  
-                                    <small class="text-body-secondary">$60</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <a href="https://store.steampowered.com/app/1888160/ARMORED_CORE_VI_FIRES_OF_RUBICON/"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/armoredcore.png" /></a>
-                                <div class="card-body">
-                                    <p class="card-text">ARMORED CORE™ VI FIRES OF RUBICON™</p>
-                                    <div class="d-flex justify-content-between align-items-center">  
-                                    <small class="text-body-secondary">$60</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <a href="https://store.steampowered.com/app/1282100/Remnant_II/"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/remnant.png" /></a>
-                                <div class="card-body">
-                                    <p class="card-text">Remnant II</p>
-                                    <div class="d-flex justify-content-between align-items-center">  
-                                    <small class="text-body-secondary">$50</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-      
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/cyberpunk.png" /></a>
-                                <div class="card-body">
-                                    <p class="card-text">Cyberpunk 2077</p>
-                                    <div class="d-flex justify-content-between align-items-center">  
-                                    <small class="text-body-secondary">$60</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <a href="https://store.steampowered.com/app/333640/Caves_of_Qud/"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/caves.png" /></a>
-                                <div class="card-body">
-                                    <p class="card-text">Caves of Qud</p>
-                                    <div class="d-flex justify-content-between align-items-center">  
-                                    <small class="text-body-secondary">$20</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <a href="https://store.steampowered.com/app/1245620/ELDEN_RING/"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/eldenring.png" /></a>
-                                <div class="card-body">
-                                    <p class="card-text">Elden Ring</p>
-                                    <div class="d-flex justify-content-between align-items-center">  
-                                    <small class="text-body-secondary">$60</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-      
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <a href="https://www.sweetwater.com/store/detail/KeyLab2-61BK"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/keyboard.png" /></a>
-                                <div class="card-body">
-                                    <p class="card-text">KeyLab2-61BK</p>
-                                    <div class="d-flex justify-content-between align-items-center">  
-                                    <small class="text-body-secondary">$549</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
+                            <span class="position-absolute badge bg-primary">
+                                1
+                                <span class="visually-hidden">unread messages</span>
+                              </span>
                             <a href="https://www.sweetwater.com/store/detail/ATHM50x--audio-technica-ath-m50x-closed-back-studio-monitoring-headphones"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/headphones.png" /></a>
                                 <div class="card-body">
                                     <p class="card-text">ATH-M50x</p>
@@ -115,13 +75,18 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col">
                         <div class="card shadow-sm">
-                            <a href="https://www.ebay.com/itm/275786820401?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=FaXHCL7wS0O&sssrc=2047675&ssuid=novKp0-ATOu&widget_ver=artemis&media=COPY"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/trays.png" /></a>
+                            <span class="position-absolute badge bg-primary">
+                                2
+                                <span class="visually-hidden">unread messages</span>
+                              </span>
+                            <a href="https://www.sweetwater.com/store/detail/Claw--middle-atlantic-products-claw"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/cablerack.png" /></a>
                                 <div class="card-body">
-                                    <p class="card-text">Lot of 10 SUPERMICRO 3.5 SAS/SATA HDD Server Caddy Tray</p>
+                                    <p class="card-text">Middle Atlantic Products Claw Wall Mount Cable Management System</p>
                                     <div class="d-flex justify-content-between align-items-center">  
-                                    <small class="text-body-secondary">$35</small>
+                                    <small class="text-body-secondary">$31.95</small>
                                 </div>
                             </div>
                         </div>
@@ -129,6 +94,10 @@
 
                     <div class="col">
                         <div class="card shadow-sm">
+                            <span class="position-absolute badge bg-primary">
+                                3
+                                <span class="visually-hidden">unread messages</span>
+                              </span>
                             <a href="https://www.ebay.com/itm/276170014936?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=FzUtmyqOQLy&sssrc=2047675&ssuid=novKp0-ATOu&widget_ver=artemis&media=COPY"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/drives.png" /></a>
                                 <div class="card-body">
                                     <p class="card-text">Lot of 8x ST4000NM0023 Seagate 4TB 6GB SAS 7.2k 3.5" LFF HDD (This is an example, hard to find any of these sales that aren't auctions - Please ask me if you have questions, the specs are important)</p>
@@ -138,14 +107,18 @@
                             </div>
                         </div>
                     </div>
-
+                    
                     <div class="col">
                         <div class="card shadow-sm">
-                            <a href="https://www.newegg.com/seagate-ironwolf-st8000vn004-8tb/p/N82E16822184796?Item=N82E16822184796#"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/ironwolf.png" /></a>
+                            <span class="position-absolute badge bg-primary">
+                                4
+                                <span class="visually-hidden">unread messages</span>
+                              </span>
+                            <a href="https://www.merchbar.com/r-b-hiphop-rap/99-neighbors/99-neighbors-wherever-you-re-going-i-hope-i-vinyl-record?ucc=US&gad_source=1&gclid=CjwKCAiAvdCrBhBREiwAX6-6UvcPRljzkGKmXS6UcaVA-2kxFPR6SobdEwsYU8XhrQtz8uvrMLF91xoCl64QAvD_BwE"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/whereever.png" /></a>
                                 <div class="card-body">
-                                    <p class="card-text">2x Seagate IronWolf 8TB NAS Hard Drive 7200 RPM 256MB Cache SATA 6.0Gb/s CMR 3.5" Internal HDD</p>
+                                    <p class="card-text">Wherever You're Going I Hope It's Great Vinyl Record</p>
                                     <div class="d-flex justify-content-between align-items-center">  
-                                    <small class="text-body-secondary">2x $139.99</small>
+                                    <small class="text-body-secondary">$19.99</small>
                                 </div>
                             </div>
                         </div>
@@ -153,6 +126,10 @@
 
                     <div class="col">
                         <div class="card shadow-sm">
+                            <span class="position-absolute badge bg-primary">
+                                5
+                                <span class="visually-hidden">unread messages</span>
+                              </span>
                             <a href="https://www.sweetwater.com/store/detail/HS8pr--yamaha-hs8-8-inch-powered-studio-monitor-pair-black"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/hs8.png" /></a>
                                 <div class="card-body">
                                     <p class="card-text">HS8 monitor speaker pair</p>
@@ -165,6 +142,42 @@
 
                     <div class="col">
                         <div class="card shadow-sm">
+                            <span class="position-absolute badge bg-primary">
+                                6
+                                <span class="visually-hidden">unread messages</span>
+                              </span>
+                            <a href="https://www.sweetwater.com/store/detail/XStdDblLt--on-stage-stands-ks8191-lok-tight-classic-double-by"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/keyboardstand.png" /></a>
+                                <div class="card-body">
+                                    <p class="card-text">On-Stage KS8191 Bullet Nose Keyboard Stand with Lok-Tight Attachment</p>
+                                    <div class="d-flex justify-content-between align-items-center">  
+                                    <small class="text-body-secondary">$61.95</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <span class="position-absolute badge bg-primary">
+                                7
+                                <span class="visually-hidden">unread messages</span>
+                              </span>
+                            <a href="https://www.ebay.com/itm/275786820401?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=FaXHCL7wS0O&sssrc=2047675&ssuid=novKp0-ATOu&widget_ver=artemis&media=COPY"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/trays.png" /></a>
+                                <div class="card-body">
+                                    <p class="card-text">Lot of 10 SUPERMICRO 3.5 SAS/SATA HDD Server Caddy Tray</p>
+                                    <div class="d-flex justify-content-between align-items-center">  
+                                    <small class="text-body-secondary">$35</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <span class="position-absolute badge bg-primary">
+                                8
+                                <span class="visually-hidden">unread messages</span>
+                              </span>
                             <a href="https://www.sweetwater.com/store/detail/WA47JrBk--warm-audio-wa-47jr-large-diaphragm-condenser-microphone-black"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/condenser1.png" /></a>
                                 <div class="card-body">
                                     <p class="card-text">Warm Audio WA-47Jr Large-Diaphragm Condenser Microphone - Black</p>
@@ -175,6 +188,204 @@
                         </div>
                     </div>
 
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <span class="position-absolute badge bg-primary">
+                                9
+                                <span class="visually-hidden">unread messages</span>
+                              </span>
+                            <a href="https://www.sweetwater.com/store/detail/KeyLab2-61BK"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/keyboard.png" /></a>
+                                <div class="card-body">
+                                    <p class="card-text">KeyLab2-61BK</p>
+                                    <div class="d-flex justify-content-between align-items-center">  
+                                    <small class="text-body-secondary">$549</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <span class="position-absolute badge bg-primary">
+                                10
+                                <span class="visually-hidden">unread messages</span>
+                              </span>
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/2city.png" />
+                                <div class="card-body">
+                                    <p class="card-text">Money to release Reggie's music catalog</p>
+                                    <div class="d-flex justify-content-between align-items-center">  
+                                    <small class="text-body-secondary">$200.00</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <span class="position-absolute badge bg-primary">
+                                11
+                                <span class="visually-hidden">unread messages</span>
+                              </span>
+                            <a href="https://www.onecutvinyl.com/"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/2cityspotify.png" /></a>
+                                <div class="card-body">
+                                    <p class="card-text">Money to get a custom LP vinyl of 2city's songs on Spotify</p>
+                                    <div class="d-flex justify-content-between align-items-center">  
+                                    <small class="text-body-secondary">$120.00</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <span class="position-absolute badge bg-primary">
+                                12
+                                <span class="visually-hidden">unread messages</span>
+                              </span>
+                            <a href="https://www.merchbar.com/hard-rock-metal/sleep-token/sleep-token-take-me-back-to-eden-vinyl-record?ucc=US&gad_source=1&gclid=CjwKCAiAvdCrBhBREiwAX6-6UsAfcUEmBbTOLUGQZVz39RO97aZiVY1Dfq8pgExvck_G6Ju0zp8w7RoCQ-wQAvD_BwE"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/eden.png" /></a>
+                                <div class="card-body">
+                                    <p class="card-text">Take Me Back To Eden (2LP) Vinyl Record</p>
+                                    <div class="d-flex justify-content-between align-items-center">  
+                                    <small class="text-body-secondary">$28.99</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <span class="position-absolute badge bg-primary">
+                                13
+                                <span class="visually-hidden">unread messages</span>
+                              </span>
+                            <a href="https://www.newegg.com/seagate-ironwolf-st8000vn004-8tb/p/N82E16822184796?Item=N82E16822184796#"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/ironwolf.png" /></a>
+                                <div class="card-body">
+                                    <p class="card-text">2x Seagate IronWolf 8TB NAS Hard Drive 7200 RPM 256MB Cache SATA 6.0Gb/s CMR 3.5" Internal HDD</p>
+                                    <div class="d-flex justify-content-between align-items-center">  
+                                    <small class="text-body-secondary">2x $139.99</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <span class="position-absolute badge bg-primary">
+                                14
+                                <span class="visually-hidden">unread messages</span>
+                              </span>
+                            <a href="https://spinefarm.merchnow.com/collections/dead-poet-society/products/dps0dps0cb-lp"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/fissionblue.png" /></a>
+                                <div class="card-body">
+                                    <p class="card-text">FISSION BLUE VINYL LP (PRE-ORDER)</p>
+                                    <div class="d-flex justify-content-between align-items-center">  
+                                    <small class="text-body-secondary">$37.98</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <span class="position-absolute badge bg-primary">
+                                15
+                                <span class="visually-hidden">unread messages</span>
+                              </span>
+                            <a href="https://www.sweetwater.com/store/detail/ATLP1240USBXP--audio-technica-at-lp1240-usbxp-direct-drive-professional-dj-turntable"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/turntable.png" /></a>
+                                <div class="card-body">
+                                    <p class="card-text">Audio-Technica AT-LP1240-USBXP Direct-Drive Professional DJ Turntable</p>
+                                    <div class="d-flex justify-content-between align-items-center">  
+                                    <small class="text-body-secondary">$599.99</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <span class="position-absolute badge bg-primary">
+                                16
+                                <span class="visually-hidden">unread messages</span>
+                              </span>
+                            <a href="https://a.co/d/df5V2tA"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/recordcrate.png" /></a>
+                                <div class="card-body">
+                                    <p class="card-text">Telawsfun Vinyl Record Storage Crate</p>
+                                    <div class="d-flex justify-content-between align-items-center">  
+                                    <small class="text-body-secondary">3 x $29.99</small>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div></div>
+
+                    <div class="album py-5 bg-body-secondary">
+                        <div id="tech">
+                        <h2>Tech</h2>  
+                        <hr />
+                        <div class="container">
+                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+                                <div class="col">
+                                    <div class="card shadow-sm">
+                                        <a href="https://a.co/d/32elImp"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/printer.png" /></a>
+                                            <div class="card-body">
+                                                <p class="card-text">ANYCUBIC Kobra 2 Neo 3D Printer</p>
+                                                <div class="d-flex justify-content-between align-items-center">  
+                                                <small class="text-body-secondary">$289.99</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="card shadow-sm">
+                                        <a href="https://a.co/d/1SqfyBu"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/airfryer2.png" /></a>
+                                            <div class="card-body">
+                                                <p class="card-text">CHEFMAN Multifunctional Digital Air Fryer+</p>
+                                                <div class="d-flex justify-content-between align-items-center">  
+                                                <small class="text-body-secondary">$99.00</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col">
+                                    <div class="card shadow-sm">
+                                        <a href="https://a.co/d/i6lY5x5"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/cookbook.png" /></a>
+                                            <div class="card-body">
+                                                <p class="card-text">CHEFMAN Digital Air Fryer Cookbook for Beginners: 1200 Days Effortless and Delicious Air Fryer Recipes for Beginners and Advanced Users</p>
+                                                <div class="d-flex justify-content-between align-items-center">  
+                                                <small class="text-body-secondary">$4.75</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col">
+                                    <div class="card shadow-sm">
+                                        <a href="https://a.co/d/7czNCbI"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/r730xd.png" /></a>
+                                            <div class="card-body">
+                                                <p class="card-text">Dell PowerEdge R730XD Server | 2X E5-2650v3 20 Cores | 384GB | H730 | 30TB Storage (Renewed)</p>
+                                                <div class="d-flex justify-content-between align-items-center">  
+                                                <small class="text-body-secondary">$750.11</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col">
+                                    <div class="card shadow-sm">
+                                        <a href="https://a.co/d/8EyE63K"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/730.png" /></a>
+                                            <div class="card-body">
+                                                <p class="card-text">Dell PowerEdge R730xd Server 2X E5-2690v4 2.60Ghz 28-Core 384GB H730 (Renewed)</p>
+                                                <div class="d-flex justify-content-between align-items-center">  
+                                                <small class="text-body-secondary">$877.16</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+      
                     <div class="col">
                         <div class="card shadow-sm">
                             <a href="https://a.co/d/iQbVI2w"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/gpu.png" /></a>
@@ -189,39 +400,107 @@
 
                     <div class="col">
                         <div class="card shadow-sm">
-                            <a href="https://a.co/d/32elImp"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/printer.png" /></a>
+                            <a href="https://a.co/d/dJw17Vv"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/webcam.png" /></a>
                                 <div class="card-body">
-                                    <p class="card-text">ANYCUBIC Kobra 2 Neo 3D Printer</p>
+                                    <p class="card-text">1080P Webcam - USB Webcam</p>
                                     <div class="d-flex justify-content-between align-items-center">  
-                                    <small class="text-body-secondary">$289.99</small>
+                                    <small class="text-body-secondary">$19.99</small>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                </div></div>
 
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <a href="https://a.co/d/1SqfyBu"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/airfryer2.png" /></a>
-                                <div class="card-body">
-                                    <p class="card-text">CHEFMAN Multifunctional Digital Air Fryer+</p>
-                                    <div class="d-flex justify-content-between align-items-center">  
-                                    <small class="text-body-secondary">$99.00</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="album py-5 bg-body-secondary">
+                        <div id="music-gear">
+                        <h2>Music Gear</h2>         
+                        <hr />
+                        <div class="container">
+                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <a href="https://a.co/d/i6lY5x5"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/cookbook.png" /></a>
-                                <div class="card-body">
-                                    <p class="card-text">CHEFMAN Digital Air Fryer Cookbook for Beginners: 1200 Days Effortless and Delicious Air Fryer Recipes for Beginners and Advanced Users</p>
-                                    <div class="d-flex justify-content-between align-items-center">  
-                                    <small class="text-body-secondary">$4.75</small>
+                                <div class="col">
+                                    <div class="card shadow-sm">
+                                        <a href="https://www.sweetwater.com/store/detail/BabyfaceProFS--rme-babyface-pro-fs-24-channel-usb-audio-interface"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/babyface.png" /></a>
+                                            <div class="card-body">
+                                                <p class="card-text">RME Babyface Pro FS 24-channel USB Audio Interface</p>
+                                                <div class="d-flex justify-content-between align-items-center">  
+                                                <small class="text-body-secondary">$999.00</small>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
+
+                                <div class="col">
+                                    <div class="card shadow-sm">
+                                        <a href="https://www.sweetwater.com/store/detail/EEHBFCNH--epiphone-hummingbird-pro-faded-cherry-sunburst"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/hummingbird.png" /></a>
+                                            <div class="card-body">
+                                                <p class="card-text">Epiphone Hummingbird Studio Acoustic-Electric Guitar - Faded Cherry Sunburst</p>
+                                                <div class="d-flex justify-content-between align-items-center">  
+                                                <small class="text-body-secondary">$449.00</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="card shadow-sm">
+                                        <a href="https://www.sweetwater.com/store/detail/JazzPPBCR--fender-player-series-jazzmaster-buttercream-with-pau-ferro-fingerboard"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/jaguar.png" /></a>
+                                            <div class="card-body">
+                                                <p class="card-text">Fender Player Jazzmaster - Buttercream with Pau Ferro Fingerboard</p>
+                                                <div class="d-flex justify-content-between align-items-center">  
+                                                <small class="text-body-secondary">$829.99</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card shadow-sm">
+                                        <a href="https://www.sweetwater.com/store/detail/TelePPPSS--fender-player-plus-telecaster-silver-smoke-with-pau-ferro-fingerboard"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/tele.png" /></a>
+                                            <div class="card-body">
+                                                <p class="card-text">Fender Player Plus Telecaster - Silver Smoke with Pau Ferro Fingerboard</p>
+                                                <div class="d-flex justify-content-between align-items-center">  
+                                                <small class="text-body-secondary">$999.99</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="card shadow-sm">
+                                        <a href="https://www.sweetwater.com/store/detail/FFTotalBun--fabfilter-total-plug-in-bundle"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/fabfilter.png" /></a>
+                                            <div class="card-body">
+                                                <p class="card-text">FabFilter Total Bundle Plug-in Collection</p>
+                                                <div class="d-flex justify-content-between align-items-center">  
+                                                <small class="text-body-secondary">$899.00</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="card shadow-sm">
+                                        <a href="https://www.sweetwater.com/store/detail/sE2300--se-electronics-se2300-large-diaphragm-condenser-microphone"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/2300.png" /></a>
+                                            <div class="card-body">
+                                                <p class="card-text">sE Electronics sE2300 Large-diaphragm Condenser Microphone</p>
+                                                <div class="d-flex justify-content-between align-items-center">  
+                                                <small class="text-body-secondary">$349.00</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="card shadow-sm">
+                                        <a href="https://www.sweetwater.com/store/detail/DT700ProX--beyerdynamic-dt-700-pro-by-closed-back-studio-mixing-headphones"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/dt700prox.png" /></a>
+                                            <div class="card-body">
+                                                <p class="card-text">Beyerdynamic DT 700 Pro X Closed-back Studio Mixing Headphones</p>
+                                                <div class="d-flex justify-content-between align-items-center">  
+                                                <small class="text-body-secondary">$249.00</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                     <div class="col">
                         <div class="card shadow-sm">
@@ -230,18 +509,6 @@
                                     <p class="card-text">Radial J33 2-channel Active Turntable Preamp/Direct Box</p>
                                     <div class="d-flex justify-content-between align-items-center">  
                                     <small class="text-body-secondary">$249.99</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <a href="https://www.sweetwater.com/store/detail/ATLP1240USBXP--audio-technica-at-lp1240-usbxp-direct-drive-professional-dj-turntable"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/turntable.png" /></a>
-                                <div class="card-body">
-                                    <p class="card-text">Audio-Technica AT-LP1240-USBXP Direct-Drive Professional DJ Turntable</p>
-                                    <div class="d-flex justify-content-between align-items-center">  
-                                    <small class="text-body-secondary">$599.99</small>
                                 </div>
                             </div>
                         </div>
@@ -273,42 +540,6 @@
 
                     <div class="col">
                         <div class="card shadow-sm">
-                            <a href="https://www.sweetwater.com/store/detail/Claw--middle-atlantic-products-claw"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/cablerack.png" /></a>
-                                <div class="card-body">
-                                    <p class="card-text">Middle Atlantic Products Claw Wall Mount Cable Management System</p>
-                                    <div class="d-flex justify-content-between align-items-center">  
-                                    <small class="text-body-secondary">$31.95</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <a href="https://www.sweetwater.com/store/detail/XStdDblLt--on-stage-stands-ks8191-lok-tight-classic-double-by"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/keyboardstand.png" /></a>
-                                <div class="card-body">
-                                    <p class="card-text">On-Stage KS8191 Bullet Nose Keyboard Stand with Lok-Tight Attachment</p>
-                                    <div class="d-flex justify-content-between align-items-center">  
-                                    <small class="text-body-secondary">$61.95</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <a href="https://www.sweetwater.com/store/detail/JazzPPBCR--fender-player-series-jazzmaster-buttercream-with-pau-ferro-fingerboard"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/jaguar.png" /></a>
-                                <div class="card-body">
-                                    <p class="card-text">Fender Player Jazzmaster - Buttercream with Pau Ferro Fingerboard</p>
-                                    <div class="d-flex justify-content-between align-items-center">  
-                                    <small class="text-body-secondary">$829.99</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card shadow-sm">
                             <a href="https://www.sweetwater.com/store/detail/JagCV70SG--squier-classic-vibe-70s-jaguar-seafoam-green"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/jag2.png" /></a>
                                 <div class="card-body">
                                     <p class="card-text">Squier Classic Vibe '70s Jaguar - Surf Green</p>
@@ -330,19 +561,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <a href="https://www.sweetwater.com/store/detail/TelePPPSS--fender-player-plus-telecaster-silver-smoke-with-pau-ferro-fingerboard"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/tele.png" /></a>
-                                <div class="card-body">
-                                    <p class="card-text">Fender Player Plus Telecaster - Silver Smoke with Pau Ferro Fingerboard</p>
-                                    <div class="d-flex justify-content-between align-items-center">  
-                                    <small class="text-body-secondary">$999.99</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     <div class="col">
                         <div class="card shadow-sm">
                             <a href="https://www.sweetwater.com/store/detail/C40--yamaha-c40ii-full-scale-classical-natural"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/c40.png" /></a>
@@ -354,19 +572,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <a href="https://www.sweetwater.com/store/detail/EEHBFCNH--epiphone-hummingbird-pro-faded-cherry-sunburst"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/hummingbird.png" /></a>
-                                <div class="card-body">
-                                    <p class="card-text">Epiphone Hummingbird Studio Acoustic-Electric Guitar - Faded Cherry Sunburst</p>
-                                    <div class="d-flex justify-content-between align-items-center">  
-                                    <small class="text-body-secondary">$449.00</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     <div class="col">
                         <div class="card shadow-sm">
                             <a href="https://www.sweetwater.com/store/detail/JR1--yamaha-jr1-3-4-size-dreadnought-natural"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/jr1.png" /></a>
@@ -410,18 +615,6 @@
                                     <p class="card-text">Electro-Harmonix Big Muff Pi Fuzz Pedal</p>
                                     <div class="d-flex justify-content-between align-items-center">  
                                     <small class="text-body-secondary">$101.99</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <a href="https://www.sweetwater.com/store/detail/FFTotalBun--fabfilter-total-plug-in-bundle"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/fabfilter.png" /></a>
-                                <div class="card-body">
-                                    <p class="card-text">FabFilter Total Bundle Plug-in Collection</p>
-                                    <div class="d-flex justify-content-between align-items-center">  
-                                    <small class="text-body-secondary">$899.00</small>
                                 </div>
                             </div>
                         </div>
@@ -477,71 +670,11 @@
 
                     <div class="col">
                         <div class="card shadow-sm">
-                            <a href="https://www.sweetwater.com/store/detail/sE2300--se-electronics-se2300-large-diaphragm-condenser-microphone"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/2300.png" /></a>
-                                <div class="card-body">
-                                    <p class="card-text">sE Electronics sE2300 Large-diaphragm Condenser Microphone</p>
-                                    <div class="d-flex justify-content-between align-items-center">  
-                                    <small class="text-body-secondary">$349.00</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <a href="https://www.sweetwater.com/store/detail/DT700ProX--beyerdynamic-dt-700-pro-by-closed-back-studio-mixing-headphones"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/dt700prox.png" /></a>
-                                <div class="card-body">
-                                    <p class="card-text">Beyerdynamic DT 700 Pro X Closed-back Studio Mixing Headphones</p>
-                                    <div class="d-flex justify-content-between align-items-center">  
-                                    <small class="text-body-secondary">$249.00</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <a href="https://a.co/d/7czNCbI"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/r730xd.png" /></a>
-                                <div class="card-body">
-                                    <p class="card-text">Dell PowerEdge R730XD Server | 2X E5-2650v3 20 Cores | 384GB | H730 | 30TB Storage (Renewed)</p>
-                                    <div class="d-flex justify-content-between align-items-center">  
-                                    <small class="text-body-secondary">$750.11</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <a href="https://a.co/d/8EyE63K"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/730.png" /></a>
-                                <div class="card-body">
-                                    <p class="card-text">Dell PowerEdge R730xd Server 2X E5-2690v4 2.60Ghz 28-Core 384GB H730 (Renewed)</p>
-                                    <div class="d-flex justify-content-between align-items-center">  
-                                    <small class="text-body-secondary">$877.16</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card shadow-sm">
                             <a href="https://www.sweetwater.com/store/detail/7350A--genelec-7350a-8-inch-powered-studio-subwoofer"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/sub1.png" /></a>
                                 <div class="card-body">
                                     <p class="card-text">Genelec 7350A 8 inch Powered Studio Subwoofer</p>
                                     <div class="d-flex justify-content-between align-items-center">  
                                     <small class="text-body-secondary">$1425.00</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <a href="https://www.sweetwater.com/store/detail/BabyfaceProFS--rme-babyface-pro-fs-24-channel-usb-audio-interface"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/babyface.png" /></a>
-                                <div class="card-body">
-                                    <p class="card-text">RME Babyface Pro FS 24-channel USB Audio Interface</p>
-                                    <div class="d-flex justify-content-between align-items-center">  
-                                    <small class="text-body-secondary">$999.00</small>
                                 </div>
                             </div>
                         </div>
@@ -583,45 +716,6 @@
                             </div>
                         </div>
                     </div>
-
-
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <a href="https://a.co/d/0PjkuYM"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/bay.png" /></a>
-                                <div class="card-body">
-                                    <p class="card-text">RackChoice Internal Hard Drive Enclosure 5x2.5”/3.5” SATA/SAS Hard Drive Backplane 6 Gbps HDD hotswap in 3xExternal 5.25" Bay</p>
-                                    <div class="d-flex justify-content-between align-items-center">  
-                                    <small class="text-body-secondary">$89.00</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <a href="https://a.co/d/df5V2tA"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/recordcrate.png" /></a>
-                                <div class="card-body">
-                                    <p class="card-text">Telawsfun Vinyl Record Storage Crate</p>
-                                    <div class="d-flex justify-content-between align-items-center">  
-                                    <small class="text-body-secondary">3 x $29.99</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <a href="https://a.co/d/dJw17Vv"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/webcam.png" /></a>
-                                <div class="card-body">
-                                    <p class="card-text">1080P Webcam - USB Webcam</p>
-                                    <div class="d-flex justify-content-between align-items-center">  
-                                    <small class="text-body-secondary">$19.99</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
 
                     <div class="col">
                         <div class="card shadow-sm">
@@ -682,31 +776,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <a href="https://www.merchbar.com/hard-rock-metal/sleep-token/sleep-token-take-me-back-to-eden-vinyl-record?ucc=US&gad_source=1&gclid=CjwKCAiAvdCrBhBREiwAX6-6UsAfcUEmBbTOLUGQZVz39RO97aZiVY1Dfq8pgExvck_G6Ju0zp8w7RoCQ-wQAvD_BwE"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/eden.png" /></a>
-                                <div class="card-body">
-                                    <p class="card-text">Take Me Back To Eden (2LP) Vinyl Record</p>
-                                    <div class="d-flex justify-content-between align-items-center">  
-                                    <small class="text-body-secondary">$28.99</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <a href="https://www.merchbar.com/r-b-hiphop-rap/99-neighbors/99-neighbors-wherever-you-re-going-i-hope-i-vinyl-record?ucc=US&gad_source=1&gclid=CjwKCAiAvdCrBhBREiwAX6-6UvcPRljzkGKmXS6UcaVA-2kxFPR6SobdEwsYU8XhrQtz8uvrMLF91xoCl64QAvD_BwE"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/whereever.png" /></a>
-                                <div class="card-body">
-                                    <p class="card-text">Wherever You're Going I Hope It's Great Vinyl Record</p>
-                                    <div class="d-flex justify-content-between align-items-center">  
-                                    <small class="text-body-secondary">$19.99</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     <div class="col">
                         <div class="card shadow-sm">
                             <a href="https://www.merchbar.com/rock-alternative/nothing-nowhere/nothing-nowhere-trauma-factory-vinyl-record-6000197?ucc=US&gad_source=1&gclid=CjwKCAiAvdCrBhBREiwAX6-6Ur_Brrs6MS8GbYBUhLCTBjjnLKdgFUbaEyLlgTGyKExK-U9ptayPYBoCuNIQAvD_BwE"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/traumafactory.png" /></a>
@@ -733,18 +802,6 @@
 
                     <div class="col">
                         <div class="card shadow-sm">
-                            <a href="https://spinefarm.merchnow.com/collections/dead-poet-society/products/dps0dps0cb-lp"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/fissionblue.png" /></a>
-                                <div class="card-body">
-                                    <p class="card-text">FISSION BLUE VINYL LP (PRE-ORDER)</p>
-                                    <div class="d-flex justify-content-between align-items-center">  
-                                    <small class="text-body-secondary">$37.98</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card shadow-sm">
                             <a href="https://a.co/d/4QwgS4e"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/dps.png" /></a>
                                 <div class="card-body">
                                     <p class="card-text">!</p>
@@ -754,14 +811,23 @@
                             </div>
                         </div>
                     </div>
+                    </div>
+                    </div></div>
+
+                    <div class="album py-5 bg-body-secondary">
+                        <div id="video-games">
+                        <h2>Video Games</h2>         
+                        <hr />
+                        <div class="container">
+                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
                     <div class="col">
                         <div class="card shadow-sm">
-                            <img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/2city.png" />
+                            <a href="https://store.steampowered.com/app/1086940/Baldurs_Gate_3/"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/BD3.png" /></a>
                                 <div class="card-body">
-                                    <p class="card-text">Money to release Reggie's music catalog</p>
+                                    <p class="card-text">Baldur's Gate 3</p>
                                     <div class="d-flex justify-content-between align-items-center">  
-                                    <small class="text-body-secondary">$200.00</small>
+                                    <small class="text-body-secondary">$60</small>
                                 </div>
                             </div>
                         </div>
@@ -769,11 +835,80 @@
 
                     <div class="col">
                         <div class="card shadow-sm">
-                            <a href="https://www.onecutvinyl.com/"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/2cityspotify.png" /></a>
+                            <a href="https://store.steampowered.com/app/890550/RUMBLE/"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/rumble.png" /></a>
                                 <div class="card-body">
-                                    <p class="card-text">Money to get a custom LP vinyl of 2city's songs on Spotify</p>
+                                    <p class="card-text">Rumble</p>
                                     <div class="d-flex justify-content-between align-items-center">  
-                                    <small class="text-body-secondary">$120.00</small>
+                                    <small class="text-body-secondary">$20</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <a href="https://store.steampowered.com/app/620980/Beat_Saber/"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/beatsaber.png" /></a>
+                                <div class="card-body">
+                                    <p class="card-text">Beat Saber</p>
+                                    <div class="d-flex justify-content-between align-items-center">  
+                                    <small class="text-body-secondary">$29.99</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <a href="https://store.steampowered.com/app/1888160/ARMORED_CORE_VI_FIRES_OF_RUBICON/"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/armoredcore.png" /></a>
+                                <div class="card-body">
+                                    <p class="card-text">ARMORED CORE™ VI FIRES OF RUBICON™</p>
+                                    <div class="d-flex justify-content-between align-items-center">  
+                                    <small class="text-body-secondary">$60</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <a href="https://store.steampowered.com/app/1282100/Remnant_II/"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/remnant.png" /></a>
+                                <div class="card-body">
+                                    <p class="card-text">Remnant II</p>
+                                    <div class="d-flex justify-content-between align-items-center">  
+                                    <small class="text-body-secondary">$50</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+      
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/cyberpunk.png" /></a>
+                                <div class="card-body">
+                                    <p class="card-text">Cyberpunk 2077</p>
+                                    <div class="d-flex justify-content-between align-items-center">  
+                                    <small class="text-body-secondary">$60</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <a href="https://store.steampowered.com/app/333640/Caves_of_Qud/"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/caves.png" /></a>
+                                <div class="card-body">
+                                    <p class="card-text">Caves of Qud</p>
+                                    <div class="d-flex justify-content-between align-items-center">  
+                                    <small class="text-body-secondary">$20</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <a href="https://store.steampowered.com/app/1245620/ELDEN_RING/"><img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="true" src="./assets/images/eldenring.png" /></a>
+                                <div class="card-body">
+                                    <p class="card-text">Elden Ring</p>
+                                    <div class="d-flex justify-content-between align-items-center">  
+                                    <small class="text-body-secondary">$60</small>
                                 </div>
                             </div>
                         </div>
@@ -794,12 +929,12 @@
                   </div>
                 </div>
               </div>
+            </div>
 
               
             </div>
           </div>
         </div>
-      
       </main>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
